@@ -31,11 +31,4 @@ This project simulates a placement prediction system where the salary package (i
 - matplotlib
 - scikit-learn
 
-### 📥 Installation
 
-Clone this repo and install dependencies:
-
-```bash
-git clone https://github.com/yourusername/CGPA2Package.git
-cd CGPA2Package
-pip install -r requirements.txt
