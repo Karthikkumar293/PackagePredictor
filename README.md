@@ -1,4 +1,4 @@
-# PackagePredictor
+# PackagePredictor (using Machine Learning)
 # 🎓 CGPA2Package 📈
 
 A simple machine learning project that predicts the placement package (LPA) of students based on their CGPA using linear regression.
