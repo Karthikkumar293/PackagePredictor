@@ -1,16 +1,15 @@
 import pandas as pd
 import numpy as np
 
-# Set seed for reproducibility
 np.random.seed(42)
 
-# for genrate a random cgpa nuber
+
 cgpa = np.round(np.random.uniform(6.0, 10.0, 1000), 2)
 
 # for genrate package
 noise = np.random.normal(0, 1.0, 1000)
 package = np.round(cgpa * 1.5 + noise, 2)
-package = np.clip(package, 2.0, 30.0)  # Limiting values to realistic ranges
+package = np.clip(package, 2.0, 30.0)  
 
 # Create DataFrame
 df = pd.DataFrame({
