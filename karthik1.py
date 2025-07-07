@@ -25,16 +25,16 @@ x =df[["CGPA"]]
 y=df["Package (LPA)"]
 
 import seaborn as sns
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 sns.scatterplot(x="CGPA",y="Package (LPA)",data=df)
 
  x_train,x_test,y_train,y_test =train_test_split(x,y,test_size=0.25,random_state=30)
- from  sklearn import LinearRegression
-  karthik = LinearRegression() 
-  karthik.fit(x_train,y_train)
+from  sklearn import LinearRegression
+karthik = LinearRegression() 
+karthik.fit(x_train,y_train)
 
 
-cgpa_input = int(input("Enter your cgpa:"))
+cgpa_input = float(input("Enter your cgpa:"))
 karthik.predict([[cgpa_input]])
