@@ -35,4 +35,6 @@ sns.scatterplot(x="CGPA",y="Package (LPA)",data=df)
   karthik = LinearRegression() 
   karthik.fit(x_train,y_train)
 
-karthik.predict([[7.9]])
+
+cgpa_input = int(input("Enter your cgpa:"))
+karthik.predict([[cgpa_input]])
